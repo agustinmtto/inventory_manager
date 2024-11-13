@@ -31,22 +31,35 @@ El objetivo principal de este proyecto fue **aprender a trabajar con bases de da
    Para comenzar a usar el sistema, primero clona el repositorio a tu máquina local:
 
    ```bash
-   git clone https://github.com/usuario/mi-repositorio.git
-    ```
-   2. Crear la base de datos:
+   git clone https://github.com/agustinmtto/inventory_manager.git
+   ```
 
-      Si es la primera vez que usas el sistema, debes crear la base de datos. Para hacerlo, simplemente ejecuta el script que crea la base de datos e inicializa la tabla de productos:
+2. **Crear la base de datos**:
+
+   Si es la primera vez que usas el sistema, debes crear la base de datos. Para hacerlo, simplemente ejecuta el script que crea la base de datos e inicializa la tabla de productos:
+
    ```bash
    python inventory_functions.py
    ```
-   3. Ejecutar el sistema:
-      
-      Luego, ejecuta el script principal para interactuar con el sistema de gestión de inventario:
+
+3. **Ejecutar el sistema**:
+
+   Luego, ejecuta el script principal para interactuar con el sistema de gestión de inventario:
+
    ```bash
    python inventory_manager.py
    ```
-   4. Opciones disponibles:
 
-      El sistema ofrece un menú de opciones para gestionar los productos. Las opciones incluyen agregar, listar, actualizar y eliminar productos del inventario.
+4. **Opciones disponibles**:
 
+   El sistema ofrece un menú de opciones para gestionar los productos. Las opciones incluyen agregar, listar, actualizar y eliminar productos del inventario.
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, siéntete libre de enviar un **pull request** con mejoras o nuevas características.
+
+
+---
+
+¡Gracias por usar el Sistema de Gestión de Inventario en Python!
 
