@@ -57,9 +57,8 @@ El objetivo principal de este proyecto fue **aprender a trabajar con bases de da
 ## Contribuciones
 
 Si deseas contribuir a este proyecto, siéntete libre de enviar un **pull request** con mejoras o nuevas características.
-
-
 ---
-
 ¡Gracias por usar el Sistema de Gestión de Inventario en Python!
 
+## Autor
+Agustin Maretto
