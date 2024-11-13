@@ -54,11 +54,5 @@ El objetivo principal de este proyecto fue **aprender a trabajar con bases de da
 
    El sistema ofrece un menú de opciones para gestionar los productos. Las opciones incluyen agregar, listar, actualizar y eliminar productos del inventario.
 
-## Contribuciones
-
-Si deseas contribuir a este proyecto, siéntete libre de enviar un **pull request** con mejoras o nuevas características.
----
-¡Gracias por usar el Sistema de Gestión de Inventario en Python!
-
 ## Autor
 Agustin Maretto
