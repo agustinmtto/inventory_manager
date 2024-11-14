@@ -22,15 +22,16 @@ def create_database():
 
 # Función para agregar un producto
 def add_product(name, quantity, price):
-    conn = sqlite3.connect('inventory.db')
+    conn = sqlite3.connect("inventory.db")
     cursor = conn.cursor()
-    cursor.execute('''
-        INSERT INTO products (name, quantity, price) VALUES (?, ?, ?) 
-    ''', (name, quantity, price)) # ? Son marcadores de posición, ayudan a prevenir ataques de inyeccion SQL
+    cursor.execute(" INSERT INTO products (name, quantity, price) VALUES (?, ?, ?) ",
+                   (name, quantity, price))  # ? Son marcadores de posición, también ayudan a prevenir ataques de inyección SQL
 
     conn.commit()
     conn.close()
     print("Producto agregado exitosamente.")
+
+
 
 
 # Función para listar todos los productos
@@ -69,11 +70,11 @@ def update_product(product_id, name=None, quantity=None, price=None):
 def delete_product(product_id):
     conn = sqlite3.connect('inventory.db')
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM products WHERE id = ?', (product_id,))
-    product = cursor.fetchone()
+    cursor.execute('SELECT * FROM products WHERE id = ?', (product_id,)) # Busca la fila de la tabla con el id (producto)
+    product = cursor.fetchone() # Recupera una sola fila de la base de datos, le del producto si existe, sino None
 
     if product:
-        cursor.execute('DELETE FROM products WHERE id = ?', (product_id,))
+        cursor.execute('DELETE FROM products WHERE id = ?', (product_id,)) # Elimina la fila
         conn.commit()
         print("Producto eliminado exitosamente.")
     else:
